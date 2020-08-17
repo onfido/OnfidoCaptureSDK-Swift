@@ -296,32 +296,6 @@ if (variantConfigError == NULL) {
 }
 ```
 
-### 5.1 Enterprise Features
-
-If your account has enterprise features enabled and you are using an [SDK token](#3.1-sdk-tokens), you can call the `withEnterpriseFeatures(EnterpriseFeatures)` method of the `OnfidoConfig.Builder` and apply the desired features via an EnterpriseFeatures object.
-
-#### hideOnfidoLogo
-
-Enable the `hideOnfidoLogo` feature by constructing an EnterpriseFeatures object with the hideOnfidoLogo parameter set to true `EnterpriseFeatures(hideOnfidoLogo: true)`
-This will provide you with a white labeled version of the SDK where the "Onfido | Real Identity" logo will not be displayed anywhere.
-
-#### Swift
-
-```swift
-let enterpriseFeatures = EnterpriseFeatures(hideOnfidoLogo: <true | false>)
-
-let configBuilder = OnfidoConfig.builder()
-configBuilder.withEnterpriseFeatures(enterpriseFeatures)
-```
-
-#### Objective-C
-```Objective-C
-ONEnterpriseFeatures *enterpriseFeatures = [[ONEnterpriseFeatures alloc] initWithHideOnfidoLogo: <true | false>];
-
-ONFlowConfigBuilder *configBuilder = [ONFlowConfig builder];
-[configBuilder withEnterpriseFeatures:enterpriseFeatures];
-```
-
 ### 6. Starting the flow
 
 #### Swift
