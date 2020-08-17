@@ -38,15 +38,6 @@ This SDK provides a drop-in set of screens and tools for iOS applications to all
 
 \*Note: the SDK is only responsible for capturing and uploading photos/videos. You still need to access the [Onfido API](https://documentation.onfido.com/) to create and manage checks.
 
-### Enterprise Features
-
-This SDK supports enterprise-only features such as:
--   Hide Onfido Logo
-
-These features must be enabled on your account before they can be used, otherwise you will get runtime exceptions. Details for implementation can be found [here](#5.1-enterprise-features).
-
-![Capture Document and face](assets/Overview.png)
-
 ## Getting started
 
 * SDK supports iOS 10+
